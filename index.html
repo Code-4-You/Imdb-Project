@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- website title  -->
+    <title>IMDB CLONE</title>
+   
+    <!-- fontawesome icon link -->
+    <script src="https://kit.fontawesome.com/259826773d.js" crossorigin="anonymous"></script>
+   
+    <!-- favicon  -->
+    <link rel="icon" type="image" href="favicon.png">
+   
+    <!-- style css link  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- body begains here  -->
+<body>
+    <!-- this is the main div of the website  -->
+    <div id="main">
+        <!-- this is the header part  -->
+        <div id="header">
+            <!-- this is the website logo which is in the form of image  -->
+            <div>
+               
+            </div>
+
+            <!-- this is the search section  -->
+            <div id="search-bar">
+                <div class="search-content">
+                    <div id="search-area">
+                        <!-- this is the input area for searching the movie  -->
+                        <input type="text" name="searchMovie" id="searchMovie" placeholder="Type to search your movie..."
+                            autocomplete="off">
+                            <i class="fa-solid fa-magnifying-glass" style="color: #1d69ed;"></i>
+                    </div>
+                    <!-- here the results will be displayed  -->
+                    <div class="results">
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- this is the header right section were the fav movies are displayed  -->
+            <div id="right-section">
+                <button id="my-list">
+                    <!-- link to go fav section  -->
+                    <a href="./myfav.html"> <i class="fa-solid fa-heart-circle-bolt" style="color: #f00aa7;"></i> Favourite movies</a>
+                </button>
+            </div>
+        </div>
+        <!-- this is the movie container here all the movies are displayed  -->
+        <div id="movie-container">
+            <div class="movie-element"></div>
+        </div>
+    </div>
+
+    <!-- this is the next and prev btn to go to next page  -->
+    <div class="page-navigation">
+        <button id="prev-page">Previous</button>
+        <button id="next-page">Next</button>
+    </div>
+
+    </div>
+    <!-- the javascript for the main page is linked here  -->
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>
